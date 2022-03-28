@@ -7,7 +7,7 @@
 }
 
 .index-bg-image {
-    background-image: url("/public/assets/SVG/bg.svg");
+    background-image: url("../img/bg.svg");
 }
 
 .index-logo {
