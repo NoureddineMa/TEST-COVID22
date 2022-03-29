@@ -164,7 +164,13 @@ function Results() {
 
 }
 
-
+function showResult(severity) {
+    stepper[1].classList.remove("select");
+    stepper[2].classList.add("select");
+    
+    testBtn.addEventListener("click", () => {
+        window.location.reload();
+    });
 
 
 
