@@ -334,7 +334,7 @@ const questions = [{
         },
     },
     {
-        question: "Avez-vous une fatigue inhabituelle ces derniers jours ?",
+        question: "Avez-vous des difficultés importantes pour vous alimenter ou boire depuis plus de 24h?",
 
         input: {
             type: "radio",
