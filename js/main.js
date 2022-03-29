@@ -368,3 +368,6 @@ const answerInputs = document.querySelector(".answer-inputs");
 const animateBox = document.querySelector(".animation");
 const result = document.querySelector(".Préambule h1");
 const resultMessage = document.querySelectorAll(".Préambule p");
+
+
+const testBtn = document.querySelector(".start-btn");
