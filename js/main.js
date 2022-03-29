@@ -1,3 +1,22 @@
+const questionnaire = document.querySelector(".questionnaire");
+const Préambule = document.querySelector(".Préambule");
+const currentquestion = document.querySelector(".question");
+const answerInputs = document.querySelector(".answer-inputs");
+const animateBox = document.querySelector(".animation");
+const result = document.querySelector(".Préambule h1");
+const resultMessage = document.querySelectorAll(".Préambule p");
+
+
+const testBtn = document.querySelector(".start-btn");
+const stepper = document.querySelectorAll(".stepper h1");
+const progressBar = document.querySelector(".bar");
+const questionNumber = document.querySelector(".question-number");
+const nextBtn = document.querySelector(".next");
+const previousBtn = document.querySelector(".previous");
+
+
+
+
 const questions = [{
         question: "Pensez-vous avoir ou avoir eu de la fièvre ces 10 derniers jours (frissons, sueurs) ?",
 
@@ -361,18 +380,3 @@ const questions = [{
         },
     },
 ];
-const questionnaire = document.querySelector(".questionnaire");
-const Préambule = document.querySelector(".Préambule");
-const currentquestion = document.querySelector(".question");
-const answerInputs = document.querySelector(".answer-inputs");
-const animateBox = document.querySelector(".animation");
-const result = document.querySelector(".Préambule h1");
-const resultMessage = document.querySelectorAll(".Préambule p");
-
-
-const testBtn = document.querySelector(".start-btn");
-const stepper = document.querySelectorAll(".stepper h1");
-const progressBar = document.querySelector(".bar");
-const questionNumber = document.querySelector(".question-number");
-const nextBtn = document.querySelector(".next");
-const previousBtn = document.querySelector(".previous");
