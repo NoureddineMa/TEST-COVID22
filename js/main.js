@@ -119,7 +119,12 @@ function showQuestion(question) {
 }
 
 
+function folowProgress(number) {
+    const currentNmber = number + 1;
 
+    questionNumber.innerText = currentNmber;
+    progressBar.style.width = `calc(${currentNmber} * calc(100% / 22))`;
+}
 
 
 
