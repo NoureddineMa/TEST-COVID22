@@ -62,6 +62,39 @@ function startTest() {
 
 }
 
+nextBtn.addEventListener("click", () => {
+    if (currentQuestionIndex < 21) {
+        currentQuestionIndex++;
+        showQuestion(questions[currentQuestionIndex]);
+        folowProgress(currentQuestionIndex);
+        hideprevious();
+        transition("next");
+        nextBtn.disabled = true;
+        if (currentQuestionIndex === 21) {
+            nextBtn.innerText = "Terminer le test";
+            nextBtn.classList.add("result");
+            const resultBtn = document.querySelector(".result");
+            resultBtn.addEventListener("click", Results);
+        } else {
+            nextBtn.innerText = "Suivant";
+        }
+    }
+});
+
+previousBtn.addEventListener("click", () => {
+    currentQuestionIndex--;
+    showQuestion(questions[currentQuestionIndex]);
+    folowProgress(currentQuestionIndex);
+    hideprevious();
+    transition("previous");
+    nextBtn.disabled = true;
+    if (currentQuestionIndex === 21) {
+        nextBtn.innerText = "Terminer le test";
+    } else {
+        nextBtn.innerText = "Suivant";
+        nextBtn.classList.remove("result");
+    }
+});
 
 
 
