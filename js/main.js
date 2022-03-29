@@ -126,6 +126,13 @@ function folowProgress(number) {
     progressBar.style.width = `calc(${currentNmber} * calc(100% / 22))`;
 }
 
+function transition(frame) {
+    animateBox.style.animation = ` ${frame} .5s ease `;
+    animateBox.addEventListener("animationend", () => {
+        animateBox.style.animation = ``;
+    });
+}
+
 
 
 
