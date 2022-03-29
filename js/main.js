@@ -53,8 +53,7 @@ function startTest() {
     stepper[0].classList.remove("select");
     stepper[1].classList.add("select");
 
-    hideprevious();
-    nextBtn.disabled = true;
+
     
 }
 
