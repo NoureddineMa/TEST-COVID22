@@ -41,6 +41,7 @@ animateBox.addEventListener("input", (e) => {
 
 
 let currentQuestionIndex = 0;
+
 function hideprevious() {
     if (currentQuestionIndex === 0) {
         previousBtn.classList.add("hide");
@@ -52,9 +53,13 @@ function hideprevious() {
 function startTest() {
     stepper[0].classList.remove("select");
     stepper[1].classList.add("select");
+    testBtn.style.display = "none";
+    Préambule.style.display = "none";
+    questionnaire.style.display = "block";
+    hideprevious();
+    nextBtn.disabled = true;
+    showQuestion(questions[currentQuestionIndex]);
 
-
-    
 }
 
 
