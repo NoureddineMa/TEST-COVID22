@@ -96,6 +96,28 @@ previousBtn.addEventListener("click", () => {
     }
 });
 
+function showQuestion(question) {
+    currentquestion.innerText = question.question;
+    answerInputs.innerHTML = "";
+    const inputAnswer = question.input.answer;
+    const input = question.input;
+
+    if (question.input.type === "radio") {
+        inputAnswer.forEach((answer) => {
+            answerInputs.innerHTML += `
+                    <div>
+                        <input type="radio" name="${input.qNumber}" id="${answer.text}">
+                        <label for="${answer.text}">
+                        <i class="fas ${answer.icon}"></i>
+                        <span>${answer.text}</span> </label>
+                    </div>`;
+        });
+    } else {
+        answerInputs.innerHTML += `<input type="number" name="${input.qNumber}" id="${input.name}" min="${input.min}" max="${input.max}" placeholder="${input.min} - ${input.max}">
+                                    <span class="input-span">${input.name}</span>`;
+    }
+}
+
 
 
 
