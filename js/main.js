@@ -368,3 +368,11 @@ const answerInputs = document.querySelector(".answer-inputs");
 const animateBox = document.querySelector(".animation");
 const result = document.querySelector(".Préambule h1");
 const resultMessage = document.querySelectorAll(".Préambule p");
+
+
+const testBtn = document.querySelector(".start-btn");
+const stepper = document.querySelectorAll(".stepper h1");
+const progressBar = document.querySelector(".bar");
+const questionNumber = document.querySelector(".question-number");
+const nextBtn = document.querySelector(".next");
+const previousBtn = document.querySelector(".previous");
