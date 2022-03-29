@@ -361,3 +361,10 @@ const questions = [{
         },
     },
 ];
+const questionnaire = document.querySelector(".questionnaire");
+const Préambule = document.querySelector(".Préambule");
+const currentquestion = document.querySelector(".question");
+const answerInputs = document.querySelector(".answer-inputs");
+const animateBox = document.querySelector(".animation");
+const result = document.querySelector(".Préambule h1");
+const resultMessage = document.querySelectorAll(".Préambule p");
