@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Home</title>
+  <!-- link bootstrap  -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/css/bootstrap.min.css" integrity="sha384-r4NyP46KrjDleawBgD5tp8Y7UzmLA05oM1iAEQ17CSuDqnUK2+k9luXQOfXJCJ4I" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/js/bootstrap.min.js" integrity="sha384-oesi62hOLfzrys4LxRF63OJCXdXDipiYWBnvTl9Y9/TRlw5xlKIEHpNyvvDShgf/" crossorigin="anonymous"></script>
+  <!-- link font awesome  -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.0/css/all.min.css" integrity="sha512-10/jx2EXwxxWqCLX/hHth/vu2KY3jCF70dCQB8TSgNjbCVAC/8vai53GfMDrO2Emgwccf2pJqxct9ehpzG+MTw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <!-- link css -->
+  <link rel="stylesheet" href="./css/style.css">
+</head>
+<body class="for-font">
+        <nav class="navbar navbar-expand-lg navbar-light index-bg-image">
+            <a href="#"> <img src="/img/sante_lg.png" alt="LOGO" class="index-logo"></a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavDropdown">
+              <ul class="navbar-nav ml-auto">
+                    <li class=" list-unstyled  mx-3 index-lien mt-1"> <a href="conseil.html" class=" text-decoration-none h5 ml-3 link-secondary"> Conseilles</a></li>
+                    <li class="list-unstyled index-lien mt-1"> <a href="index.html" class="text-decoration-none h5 mr-5 link-secondary"> Accueil</a></li>
+                    <li class="nav-item  px-2 border rounded border-primary list-unstyled text-primary " ><i class="fa-solid fa-globe text-warning mx-2"></i> <a href="#" class="text-decoration-none h5 px-2 py-2 ">عربي</a></li>
+              </ul>
+            </div>
+          </nav>
+
+          <section class="stepper">
+            <h1 class="select">Informations</h1>
+            <h1>Questionnaire</h1>
+            <h1>Résultats</h1>
+          </section>
+          
+          <section class="Préambule bg-light px-5 py-5 container text-center">
+            <h1 class="conseil-title">Préambule</h1>
+            <p>
+              L’application est fournie à titre gratuit, en l’état, uniquement à des
+              fins d’information pour contribuer à fluidifier la prise en charge des
+              personnes par les services d’urgences pendant l’épidémie de Coronavirus
+              COVID-19. L’exhaustivité, l’exactitude, le caractère à jour des
+              informations et contenus mis à disposition dans cette application, ou
+              leur adéquation à des finalités particulières, ne sont pas garantis.
+            </p>
+            <hr />
+            <p>
+              Cette application ne substitue pas votre médecin qui est plus apte à
+              vous donner plus de précision. Les informations de cette application est
+              le premier niveau de la détection des cas possibles du COVID-19.
+            </p>
+          </section>
+          <div class="text-center">
+          <button class=" px-3 py-2 start-btn mt-5 index-button border rounded  index-p">Demarer le test</button>
+            </div>
+
+
+          <section class="questionnaire">
+            <div class="progress">
+              <h3><span class="question-number">1</span> /22</h3>
+              <div class="progress__bar">
+                <div class="bar"></div>
+              </div>
+            </div>
+            <div class="animation">
+              <h1 class="question"></h1>
+              <div class="answer-inputs"></div>
+              <div class="btn-container">
+                <button class="previous index-button">Précédent</button>
+                <button class="next index-button">Suivant</button>
+              </div>
+            </div>
+          </section>
+
+
+
+
+
+
+</body>
+</html>
