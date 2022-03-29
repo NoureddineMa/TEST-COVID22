@@ -133,6 +133,37 @@ function transition(frame) {
     });
 }
 
+let answers = {};
+
+let severity = 0;
+
+function Results() {
+
+    if (answers["Q1"] === "Oui") {
+        severity++;
+    }
+
+
+    if (answers["Q8"] === "Oui" || answers["Q9"] === "Oui") {
+        severity++;
+    }
+
+
+    if (answers["Q10"] === "Fatigué(e)" || answers["Q10"] === "Très fatigué") {
+        severity++;
+    }
+
+
+    if (answers["Q14"] === "Oui" || answers["Q15"] === "Oui") {
+        severity++;
+    }
+
+
+    showResult(severity);
+
+
+}
+
 
 
 
