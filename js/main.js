@@ -373,5 +373,5 @@ const resultMessage = document.querySelectorAll(".Préambule p");
 const testBtn = document.querySelector(".start-btn");
 const stepper = document.querySelectorAll(".stepper h1");
 const progressBar = document.querySelector(".bar");
-
+const questionNumber = document.querySelector(".question-number");
 
