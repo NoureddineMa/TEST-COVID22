@@ -167,10 +167,49 @@ function Results() {
 function showResult(severity) {
     stepper[1].classList.remove("select");
     stepper[2].classList.add("select");
-    
+    testBtn.style.display = "block";
+    Préambule.style.display = "block";
+    questionnaire.style.display = "none";
+    testBtn.textContent = " Recommencer le test";
     testBtn.addEventListener("click", () => {
         window.location.reload();
     });
+    result.innerText = "Résultats";
+
+    if (severity === 0) {
+        resultMessage[0].innerText =
+            "Votre situation "
+        resultMessage[1].innerText =
+            "Restez chez vous ";
+        resultMessage[0].style.fontSize = "30px";
+        resultMessage[0].style.fontWeight = "bold";
+        resultMessage[0].style.color = "#787878";
+    } else if (severity === 1) {
+        resultMessage[0].innerText =
+            "Nous vous conseillons";
+        resultMessage[1].innerText =
+            "Restez chez vous";
+        resultMessage[0].style.fontSize = "30px";
+        resultMessage[0].style.fontWeight = "bold";
+        resultMessage[0].style.color = "#787878";
+    } else if (severity === 2) {
+        resultMessage[0].innerText =
+            "Vous pouvez faire une téléconsultation";
+        resultMessage[1].innerText =
+            "Restez chez vous au maximum ";
+        resultMessage[0].style.fontSize = "30px";
+        resultMessage[0].style.fontWeight = "bold";
+        resultMessage[0].style.color = "#787878";
+    } else {
+        resultMessage[0].innerText = "Appelez le 141";
+        resultMessage[1].innerText =
+            "Restez chez vous au maximum";
+
+        resultMessage[0].style.color = "#d63031";
+        resultMessage[0].style.fontSize = "50px";
+        resultMessage[0].style.fontWeight = "bold";
+    }
+}
 
 
 
