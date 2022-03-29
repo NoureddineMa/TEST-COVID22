@@ -119,7 +119,19 @@ function showQuestion(question) {
 }
 
 
+function folowProgress(number) {
+    const currentNmber = number + 1;
 
+    questionNumber.innerText = currentNmber;
+    progressBar.style.width = `calc(${currentNmber} * calc(100% / 22))`;
+}
+
+function transition(frame) {
+    animateBox.style.animation = ` ${frame} .5s ease `;
+    animateBox.addEventListener("animationend", () => {
+        animateBox.style.animation = ``;
+    });
+}
 
 
 
