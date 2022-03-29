@@ -40,6 +40,38 @@ animateBox.addEventListener("input", (e) => {
 });
 
 
+let currentQuestionIndex = 0;
+function hideprevious() {
+    if (currentQuestionIndex === 0) {
+        previousBtn.classList.add("hide");
+    } else {
+        previousBtn.classList.remove("hide");
+    }
+}
+
+function startTest() {
+    stepper[0].classList.remove("select");
+    stepper[1].classList.add("select");
+
+
+    
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 const questions = [{
         question: "Pensez-vous avoir ou avoir eu de la fièvre ces 10 derniers jours (frissons, sueurs) ?",
 
